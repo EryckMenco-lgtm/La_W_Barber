@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bg)"/>
+  <rect width="600" height="300" fill="url(#glow)"/>
+  <line x1="0" y1="0" x2="300" y2="300" stroke="#C9A84C" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="150" y1="0" x2="450" y2="300" stroke="#C9A84C" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="300" y1="0" x2="600" y2="300" stroke="#C9A84C" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="450" y1="0" x2="750" y2="300" stroke="#C9A84C" stroke-opacity="0.03" stroke-width="1"/>
+  <!-- Foil strips diagonal -->
+  <g opacity="0.65">
+    <polygon points="80,0 120,0 240,300 200,300" fill="#C9A84C" fill-opacity="0.07" stroke="#C9A84C" stroke-width="1.2" stroke-opacity="0.35"/>
+    <polygon points="180,0 210,0 330,300 300,300" fill="#C9A84C" fill-opacity="0.05" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.22"/>
+    <polygon points="270,0 295,0 415,300 390,300" fill="#C9A84C" fill-opacity="0.07" stroke="#C9A84C" stroke-width="1.2" stroke-opacity="0.35"/>
+    <polygon points="360,0 380,0 500,300 480,300" fill="#C9A84C" fill-opacity="0.05" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.22"/>
+    <polygon points="450,0 465,0 585,300 570,300" fill="#C9A84C" fill-opacity="0.07" stroke="#C9A84C" stroke-width="1.2" stroke-opacity="0.35"/>
+  </g>
+  <!-- Brush large center -->
+  <g transform="translate(300,148) rotate(-30)">
+    <!-- Bristles -->
+    <path d="M-8,-100 Q-12,0 -18,60 Q-8,80 0,82 Q8,80 18,60 Q12,0 8,-100 Z"
+          fill="#C9A84C" fill-opacity="0.15" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.55"/>
+    <!-- Ferrule -->
+    <rect x="-10" y="-105" width="20" height="18" rx="2" fill="#C9A84C" fill-opacity="0.35" stroke="#C9A84C" stroke-width="1.2" stroke-opacity="0.6"/>
+    <!-- Handle -->
+    <rect x="-7" y="-180" width="14" height="80" rx="5" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.55"/>
+    <line x1="0" y1="-175" x2="0" y2="-110" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.25"/>
+  </g>
+  <!-- Color dots suggesting pigment -->
+  <circle cx="130" cy="85" r="5" fill="#C9A84C" opacity="0.2"/>
+  <circle cx="155" cy="110" r="3.5" fill="#C9A84C" opacity="0.15"/>
+  <circle cx="455" cy="85" r="5" fill="#C9A84C" opacity="0.2"/>
+  <circle cx="430" cy="115" r="3.5" fill="#C9A84C" opacity="0.15"/>
+  <circle cx="300" cy="240" r="7" fill="#C9A84C" opacity="0.18"/>
+  <!-- Small dye drop -->
+  <ellipse cx="480" cy="200" rx="6" ry="9" fill="#C9A84C" opacity="0.15"/>
+  <path d="M480,191 Q476,185 480,182 Q484,185 480,191" fill="#C9A84C" opacity="0.2"/>
+  <rect x="12" y="12" width="576" height="276" fill="none" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.3"/>
+  <path d="M12,12 L12,38 M12,12 L38,12" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <path d="M588,12 L588,38 M588,12 L562,12" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <path d="M12,288 L12,262 M12,288 L38,288" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <path d="M588,288 L588,262 M588,288 L562,288" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <text x="300" y="272" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="5" fill="#C9A84C" opacity="0.55">MECHAS · INCLUYE CORTE</text>
+  <line x1="160" y1="278" x2="440" y2="278" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+</svg>

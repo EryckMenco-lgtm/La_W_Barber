@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bg)"/>
+  <rect width="600" height="300" fill="url(#glow)"/>
+  <line x1="0" y1="0" x2="300" y2="300" stroke="#C9A84C" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="150" y1="0" x2="450" y2="300" stroke="#C9A84C" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="300" y1="0" x2="600" y2="300" stroke="#C9A84C" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="450" y1="0" x2="750" y2="300" stroke="#C9A84C" stroke-opacity="0.03" stroke-width="1"/>
+  <!-- Vertical center division -->
+  <line x1="300" y1="25" x2="300" y2="265" stroke="#C9A84C" stroke-width="1.2" stroke-opacity="0.28" stroke-dasharray="6,4"/>
+  <!-- Left side: filled grid (represents color applied) -->
+  <g opacity="0.55">
+    <line x1="50" y1="50" x2="280" y2="50" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.35"/>
+    <line x1="50" y1="80" x2="280" y2="80" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.35"/>
+    <line x1="50" y1="110" x2="280" y2="110" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.35"/>
+    <line x1="50" y1="140" x2="280" y2="140" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.35"/>
+    <line x1="50" y1="170" x2="280" y2="170" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.35"/>
+    <line x1="50" y1="200" x2="280" y2="200" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.35"/>
+    <line x1="50" y1="230" x2="280" y2="230" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.35"/>
+    <line x1="85" y1="35" x2="85" y2="255" stroke="#C9A84C" stroke-width="0.6" stroke-opacity="0.25"/>
+    <line x1="130" y1="35" x2="130" y2="255" stroke="#C9A84C" stroke-width="0.6" stroke-opacity="0.25"/>
+    <line x1="175" y1="35" x2="175" y2="255" stroke="#C9A84C" stroke-width="0.6" stroke-opacity="0.25"/>
+    <line x1="222" y1="35" x2="222" y2="255" stroke="#C9A84C" stroke-width="0.6" stroke-opacity="0.25"/>
+  </g>
+  <!-- Left side fill polygon -->
+  <polygon points="50,50 280,50 280,230 50,230" fill="#C9A84C" fill-opacity="0.05"/>
+  <!-- Color drop left -->
+  <g transform="translate(165,148)">
+    <path d="M0,-55 Q-28,-25 -28,8 Q-28,35 0,42 Q28,35 28,8 Q28,-25 0,-55 Z"
+          fill="#C9A84C" fill-opacity="0.2" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.6"/>
+    <line x1="0" y1="-55" x2="0" y2="42" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.3" stroke-dasharray="3,3"/>
+  </g>
+  <!-- Right side: outline circles (represents natural/untreated) -->
+  <circle cx="435" cy="148" r="75" fill="none" stroke="#C9A84C" stroke-width="1.2" stroke-opacity="0.3"/>
+  <circle cx="435" cy="148" r="50" fill="none" stroke="#C9A84C" stroke-width="1" stroke-opacity="0.25"/>
+  <circle cx="435" cy="148" r="25" fill="none" stroke="#C9A84C" stroke-width="1" stroke-opacity="0.2"/>
+  <circle cx="435" cy="148" r="5" fill="none" stroke="#C9A84C" stroke-width="1.2" stroke-opacity="0.35"/>
+  <rect x="12" y="12" width="576" height="276" fill="none" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.3"/>
+  <path d="M12,12 L12,38 M12,12 L38,12" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <path d="M588,12 L588,38 M588,12 L562,12" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <path d="M12,288 L12,262 M12,288 L38,288" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <path d="M588,288 L588,262 M588,288 L562,288" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <text x="300" y="272" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="5" fill="#C9A84C" opacity="0.55">TINTURADO PARCIAL</text>
+  <line x1="160" y1="278" x2="440" y2="278" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+</svg>

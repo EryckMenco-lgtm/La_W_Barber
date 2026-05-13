@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bg)"/>
+  <rect width="600" height="300" fill="url(#glow)"/>
+  <line x1="0" y1="0" x2="300" y2="300" stroke="#C9A84C" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="150" y1="0" x2="450" y2="300" stroke="#C9A84C" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="300" y1="0" x2="600" y2="300" stroke="#C9A84C" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="450" y1="0" x2="750" y2="300" stroke="#C9A84C" stroke-opacity="0.03" stroke-width="1"/>
+  <!-- Large concentric rings -->
+  <circle cx="220" cy="150" r="120" fill="none" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.1"/>
+  <circle cx="220" cy="150" r="90" fill="none" stroke="#C9A84C" stroke-width="0.9" stroke-opacity="0.15"/>
+  <circle cx="220" cy="150" r="62" fill="none" stroke="#C9A84C" stroke-width="1" stroke-opacity="0.22"/>
+  <circle cx="220" cy="150" r="38" fill="none" stroke="#C9A84C" stroke-width="1.2" stroke-opacity="0.32"/>
+  <circle cx="220" cy="150" r="18" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.45"/>
+  <circle cx="220" cy="150" r="6" fill="#C9A84C" opacity="0.55"/>
+  <!-- Radiating lines from center -->
+  <line x1="220" y1="150" x2="360" y2="40" stroke="#C9A84C" stroke-width="0.7" stroke-opacity="0.12"/>
+  <line x1="220" y1="150" x2="380" y2="148" stroke="#C9A84C" stroke-width="0.7" stroke-opacity="0.12"/>
+  <line x1="220" y1="150" x2="360" y2="258" stroke="#C9A84C" stroke-width="0.7" stroke-opacity="0.12"/>
+  <line x1="220" y1="150" x2="290" y2="30" stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.08"/>
+  <line x1="220" y1="150" x2="290" y2="268" stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.08"/>
+  <line x1="220" y1="150" x2="100" y2="28" stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.08"/>
+  <line x1="220" y1="150" x2="100" y2="272" stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.08"/>
+  <!-- Paint brush right large -->
+  <g transform="translate(460,145)">
+    <!-- Bristles -->
+    <path d="M-10,-75 Q-14,15 -20,60 Q-8,75 0,77 Q8,75 20,60 Q14,15 10,-75 Z"
+          fill="#C9A84C" fill-opacity="0.14" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.5"/>
+    <!-- Ferrule -->
+    <rect x="-11" y="-80" width="22" height="16" rx="2" fill="#C9A84C" fill-opacity="0.3" stroke="#C9A84C" stroke-width="1.2" stroke-opacity="0.55"/>
+    <!-- Handle -->
+    <rect x="-8" y="-155" width="16" height="80" rx="6" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.5"/>
+    <line x1="0" y1="-150" x2="0" y2="-85" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.22"/>
+  </g>
+  <!-- Color drops decorative -->
+  <g transform="translate(390,80)">
+    <path d="M0,-20 Q-10,-8 -10,4 Q-10,16 0,19 Q10,16 10,4 Q10,-8 0,-20 Z" fill="#C9A84C" opacity="0.18"/>
+  </g>
+  <g transform="translate(380,215)">
+    <path d="M0,-16 Q-8,-6 -8,3 Q-8,12 0,15 Q8,12 8,3 Q8,-6 0,-16 Z" fill="#C9A84C" opacity="0.14"/>
+  </g>
+  <rect x="12" y="12" width="576" height="276" fill="none" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.3"/>
+  <path d="M12,12 L12,38 M12,12 L38,12" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <path d="M588,12 L588,38 M588,12 L562,12" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <path d="M12,288 L12,262 M12,288 L38,288" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <path d="M588,288 L588,262 M588,288 L562,288" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <text x="300" y="272" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="5" fill="#C9A84C" opacity="0.55">TINTURADO COMPLETO</text>
+  <line x1="160" y1="278" x2="440" y2="278" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+</svg>

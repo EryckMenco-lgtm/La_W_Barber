@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bg)"/>
+  <rect width="600" height="300" fill="url(#glow)"/>
+  <line x1="0" y1="0" x2="300" y2="300" stroke="#C9A84C" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="150" y1="0" x2="450" y2="300" stroke="#C9A84C" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="300" y1="0" x2="600" y2="300" stroke="#C9A84C" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="450" y1="0" x2="750" y2="300" stroke="#C9A84C" stroke-opacity="0.03" stroke-width="1"/>
+  <!-- Scissors large -->
+  <g transform="translate(300,145)">
+    <line x1="-105" y1="-70" x2="115" y2="42" stroke="#C9A84C" stroke-width="7" stroke-linecap="round" opacity="0.75"/>
+    <line x1="-105" y1="70" x2="115" y2="-42" stroke="#C9A84C" stroke-width="7" stroke-linecap="round" opacity="0.75"/>
+    <circle cx="-5" cy="0" r="11" fill="#C9A84C" opacity="0.85"/>
+    <circle cx="-5" cy="0" r="5" fill="#0A0A0A"/>
+    <ellipse cx="-105" cy="-70" rx="26" ry="18" fill="none" stroke="#C9A84C" stroke-width="2.5" opacity="0.65"/>
+    <ellipse cx="-105" cy="70" rx="26" ry="18" fill="none" stroke="#C9A84C" stroke-width="2.5" opacity="0.65"/>
+    <circle cx="-105" cy="-70" r="6" fill="#C9A84C" opacity="0.25"/>
+    <circle cx="-105" cy="70" r="6" fill="#C9A84C" opacity="0.25"/>
+  </g>
+  <!-- Hair strands left -->
+  <path d="M100,40 Q115,95 108,155 Q100,210 118,255" stroke="#C9A84C" stroke-width="1.5" fill="none" stroke-opacity="0.28" stroke-dasharray="5,4"/>
+  <path d="M122,35 Q140,88 134,148 Q126,208 146,250" stroke="#C9A84C" stroke-width="1" fill="none" stroke-opacity="0.18" stroke-dasharray="4,5"/>
+  <!-- Hair strands right -->
+  <path d="M500,40 Q485,95 492,155 Q500,210 482,255" stroke="#C9A84C" stroke-width="1.5" fill="none" stroke-opacity="0.28" stroke-dasharray="5,4"/>
+  <path d="M478,35 Q460,88 466,148 Q474,208 454,250" stroke="#C9A84C" stroke-width="1" fill="none" stroke-opacity="0.18" stroke-dasharray="4,5"/>
+  <!-- Comb right -->
+  <g transform="translate(510,145)" opacity="0.38">
+    <rect x="-8" y="-55" width="16" height="110" rx="4" fill="none" stroke="#C9A84C" stroke-width="1.5"/>
+    <line x1="-8" y1="-40" x2="-8" y2="-78" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-3" y1="-40" x2="-3" y2="-84" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="2" y1="-40" x2="2" y2="-84" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="7" y1="-40" x2="7" y2="-78" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <!-- Accent dots -->
+  <circle cx="80" cy="145" r="2" fill="#C9A84C" opacity="0.3"/>
+  <circle cx="520" cy="145" r="2" fill="#C9A84C" opacity="0.3"/>
+  <circle cx="300" cy="30" r="1.5" fill="#C9A84C" opacity="0.2"/>
+  <rect x="12" y="12" width="576" height="276" fill="none" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.3"/>
+  <path d="M12,12 L12,38 M12,12 L38,12" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <path d="M588,12 L588,38 M588,12 L562,12" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <path d="M12,288 L12,262 M12,288 L38,288" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <path d="M588,288 L588,262 M588,288 L562,288" stroke="#C9A84C" stroke-width="2" fill="none"/>
+  <text x="300" y="272" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="5" fill="#C9A84C" opacity="0.55">CORTE CLÁSICO</text>
+  <line x1="160" y1="278" x2="440" y2="278" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+</svg>
