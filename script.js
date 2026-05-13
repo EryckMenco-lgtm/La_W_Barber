@@ -161,17 +161,22 @@ window.addEventListener('scroll', () => {
 /* ── Hamburger menu ── */
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.getElementById('navLinks');
+const navClose  = document.getElementById('navClose');
+
+function closeMenu() {
+  hamburger.classList.remove('open');
+  navLinks.classList.remove('open');
+}
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
   navLinks.classList.toggle('open');
 });
 
+navClose.addEventListener('click', closeMenu);
+
 navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    navLinks.classList.remove('open');
-  });
+  link.addEventListener('click', closeMenu);
 });
 
 /* ── Scroll reveal ── */
