@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La W Barber — Barbería a Domicilio</title>
+  <meta name="description" content="La W Barber — Barbería premium a domicilio en Barranquilla. Cortes clásicos, fade, barba y más. Agendamos directamente por WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── INTRO SCREEN ── -->
+  <div class="intro-screen" id="introScreen">
+    <div class="intro-panel intro-panel-top"></div>
+    <div class="intro-panel intro-panel-bottom"></div>
+    <div class="intro-center" id="introCenter">
+      <p class="intro-logo">LA <em>W</em> BARBER</p>
+      <span class="intro-number" id="introNumber">5</span>
+    </div>
+    <div class="intro-progress-track">
+      <div class="intro-progress-bar" id="introProgressBar"></div>
+    </div>
+  </div>
+
+  <!-- Cursor personalizado -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ─────────────────────────────────────────── -->
+  <!-- 1. NAVBAR -->
+  <!-- ─────────────────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-main">LA <em>W</em></span>
+        <span class="logo-sub">BARBER</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#about">Nosotros</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#gallery">Galería</a></li>
+      </ul>
+
+      <a href="https://wa.me/573217921360?text=Hola%2C+quiero+reservar+un+servicio+a+domicilio+con+La+W+Barber+%F0%9F%92%88" class="btn btn-outline nav-cta" target="_blank" rel="noopener">
+        RESERVAR &rarr;
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─────────────────────────────────────────── -->
+  <!-- 2. HERO -->
+  <!-- ─────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-fade">BARRANQUILLA &middot; SERVICIO A DOMICILIO</p>
+      <h1 class="hero-title reveal-up">
+        LA <em class="gold">W</em><br>BARBER
+      </h1>
+      <p class="hero-subtitle reveal-up delay-2">tu barbero, donde estés</p>
+      <div class="hero-divider reveal-up delay-3"></div>
+      <div class="hero-actions reveal-up delay-4">
+        <a href="https://wa.me/573217921360?text=Hola%2C+quiero+reservar+un+servicio+a+domicilio+con+La+W+Barber+%F0%9F%92%88" class="btn btn-gold" target="_blank" rel="noopener">RESERVAR AHORA</a>
+        <a href="#services" class="btn btn-ghost">VER SERVICIOS</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────── -->
+  <!-- 3. MARQUEE STRIP -->
+  <!-- ─────────────────────────────────────────── -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>&#9733; CORTE DE CABELLO</span>
+      <span>&#183;</span>
+      <span>ARREGLO DE BARBA</span>
+      <span>&#183;</span>
+      <span>A DOMICILIO</span>
+      <span>&#183;</span>
+      <span>MASCARILLA FACIAL</span>
+      <span>&#183;</span>
+      <span>DISEÑO DE CEJAS</span>
+      <span>&#183;</span>
+      <span>EN TU HOGAR</span>
+      <span>&#183;</span>
+      <span>FADE PERFECTO</span>
+      <span>&#183;</span>
+      <span>COMBO VIP</span>
+      <span>&#183;</span>
+      <!-- Duplicado para el loop -->
+      <span>&#9733; CORTE DE CABELLO</span>
+      <span>&#183;</span>
+      <span>ARREGLO DE BARBA</span>
+      <span>&#183;</span>
+      <span>A DOMICILIO</span>
+      <span>&#183;</span>
+      <span>MASCARILLA FACIAL</span>
+      <span>&#183;</span>
+      <span>DISEÑO DE CEJAS</span>
+      <span>&#183;</span>
+      <span>EN TU HOGAR</span>
+      <span>&#183;</span>
+      <span>FADE PERFECTO</span>
+      <span>&#183;</span>
+      <span>COMBO VIP</span>
+      <span>&#183;</span>
+    </div>
+  </div>
+
+  <!-- ─────────────────────────────────────────── -->
+  <!-- 4. ABOUT -->
+  <!-- ─────────────────────────────────────────── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Columna texto -->
+        <div class="about-text">
+          <p class="section-label reveal-fade">QUIÉNES SOMOS</p>
+          <h2 class="section-title reveal-up">
+            El arte de<br>la navaja<br><em>en tu hogar.</em>
+          </h2>
+          <p class="about-paragraph reveal-up delay-1">
+            En La W Barber creemos que un buen corte no debería obligarte a salir de casa.
+            Llevamos la experiencia premium directamente a ti: manos expertas, productos de
+            primera y toda la maestría de la barbería de alto nivel, donde tú nos necesites.
+          </p>
+          <div class="about-stats reveal-up delay-2">
+            <div class="stat">
+              <span class="stat-number" data-target="500">0</span>
+              <span class="stat-plus">+</span>
+              <p class="stat-label">CLIENTES</p>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="10">0</span>
+              <span class="stat-plus">+</span>
+              <p class="stat-label">AÑOS EXP</p>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="5">0</span>
+              <span class="stat-star">&#9733;</span>
+              <p class="stat-label">RATING</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna visual -->
+        <div class="about-visual reveal-fade delay-1">
+          <div class="about-frame">
+            <img src="assets/Foto%20local.jpeg" alt="La W Barber — Barbería a domicilio" class="about-photo" loading="lazy" />
+            <span class="frame-corner frame-tl"></span>
+            <span class="frame-corner frame-tr"></span>
+            <span class="frame-corner frame-bl"></span>
+            <span class="frame-corner frame-br"></span>
+            <div class="about-ornament">&#10022;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────── -->
+  <!-- 5. SERVICES -->
+  <!-- ─────────────────────────────────────────── -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">LO QUE HACEMOS</p>
+        <h2 class="section-title">Servicios a domicilio<br><em>que definen clase.</em></h2>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal-up delay-1">
+          <div class="card-illustration"><img src="assets/card-corte-clasico.svg" alt="Corte Clásico" loading="lazy"/></div>
+          <div class="card-bg-vector"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="22" cy="22" r="16" stroke-width="1.2"/><circle cx="22" cy="78" r="16" stroke-width="1.2"/><line x1="96" y1="8" x2="36" y2="62" stroke-width="1.2"/><line x1="62" y1="62" x2="96" y2="96" stroke-width="1.2"/><line x1="36" y1="36" x2="50" y2="50" stroke-width="1.2"/><circle cx="22" cy="22" r="5" stroke-width="1"/><circle cx="22" cy="78" r="5" stroke-width="1"/></svg></div>
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3.5"/><circle cx="6" cy="18" r="3.5"/><line x1="20" y1="4" x2="8.5" y2="15.5"/><line x1="14.5" y1="14.5" x2="20" y2="20"/><line x1="8.5" y1="8.5" x2="12" y2="12"/></svg></div>
+          <h3 class="card-title">Corte Clásico</h3>
+          <div class="card-divider"></div>
+          <p class="card-description">Corte clásico con tijera y máquina, perfecto para mantener tu estilo siempre impecable en la comodidad de tu hogar. Técnica impecable, acabado perfecto.</p>
+          <p class="card-price">desde $15.000</p>
+          <a href="https://wa.me/573217921360?text=Hola%2C+quiero+reservar+un+Corte+Cl%C3%A1sico+a+domicilio+%F0%9F%92%88" class="btn btn-gold-sm" target="_blank" rel="noopener">RESERVAR POR WHATSAPP</a>
+        </div>
+
+        <div class="service-card reveal-up delay-2">
+          <div class="card-illustration"><img src="assets/card-corte-barba.svg" alt="Corte + barba (el combo completo)" loading="lazy"/></div>
+          <div class="card-bg-vector"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-linecap="round"><rect x="10" y="10" width="80" height="25" rx="3" stroke-width="1.2"/><line x1="26" y1="35" x2="26" y2="55" stroke-width="1.2"/><line x1="38" y1="35" x2="38" y2="62" stroke-width="1.2"/><line x1="50" y1="35" x2="50" y2="62" stroke-width="1.2"/><line x1="62" y1="35" x2="62" y2="62" stroke-width="1.2"/><line x1="74" y1="35" x2="74" y2="55" stroke-width="1.2"/><path d="M15 82C24 68 36 64 50 64 C64 64 76 68 85 82" stroke-width="1.2"/></svg></div>
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 4h16v4H4z"/><line x1="7" y1="8" x2="7" y2="13"/><line x1="10" y1="8" x2="10" y2="15"/><line x1="14" y1="8" x2="14" y2="15"/><line x1="17" y1="8" x2="17" y2="13"/><path d="M3 19c2.5-3.5 5.5-5 9-5s6.5 1.5 9 5"/></svg></div>
+          <h3 class="card-title">Corte + barba (el combo completo)</h3>
+          <div class="card-divider"></div>
+          <p class="card-description">Corte completo y arreglo de barba con perfilado preciso. Tu look renovado de pies a cabeza. Te lo llevamos a domicilio para que no pierdas ni un segundo.</p>
+          <p class="card-price">desde $22.000</p>
+          <a href="https://wa.me/573217921360?text=Hola%2C+quiero+reservar+un+Corte+Y+Barba+a+domicilio" class="btn btn-gold-sm" target="_blank" rel="noopener">RESERVAR POR WHATSAPP</a>
+        </div>
+
+        <div class="service-card reveal-up delay-3">
+          <div class="card-illustration"><img src="assets/card-barba-completa.svg" alt="Barba completa (especializado)" loading="lazy"/></div>
+          <div class="card-bg-vector"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M8 90L62 36l14 14L22 104l-14-14z" stroke-width="1.2"/><path d="M62 36l14-14 14 14-14 14-14-14z" stroke-width="1.2"/><line x1="8" y1="90" x2="2" y2="96" stroke-width="1"/><line x1="28" y1="70" x2="40" y2="58" stroke-width="0.8" stroke-dasharray="3 4"/><line x1="36" y1="78" x2="48" y2="66" stroke-width="0.8" stroke-dasharray="3 4"/></svg></div>
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21L15 9l3 3L6 24"/><path d="M15 9l3-3 3 3-3 3-3-3z"/></svg></div>
+          <h3 class="card-title">Barba completa (especializado)</h3>
+          <div class="card-divider"></div>
+          <p class="card-description">Diseño y perfilado completo de barba. Definición precisa y acabados de calidad. La barba perfecta, directo en tu casa, sin excepciones.</p>
+          <p class="card-price">desde $8.000</p>
+          <a href="https://wa.me/573217921360?text=Hola%2C+quiero+reservar+Barba+Completa+a+domicilio+%F0%9F%AA%92" class="btn btn-gold-sm" target="_blank" rel="noopener">RESERVAR POR WHATSAPP</a>
+        </div>
+
+        <div class="service-card reveal-up delay-1">
+          <div class="card-illustration"><img src="assets/card-combo-vip.svg" alt="Combo VIP" loading="lazy"/></div>
+          <div class="card-bg-vector"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M8 85L22 38L40 62L50 14L60 62L78 38L92 85Z" stroke-width="1.2"/><line x1="6" y1="95" x2="94" y2="95" stroke-width="1.2"/><circle cx="50" cy="14" r="5" stroke-width="1"/><circle cx="22" cy="38" r="3" stroke-width="1"/><circle cx="78" cy="38" r="3" stroke-width="1"/><line x1="22" y1="85" x2="78" y2="85" stroke-width="0.8"/><line x1="32" y1="75" x2="68" y2="75" stroke-width="0.8"/></svg></div>
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18l3.5-10 4 5.5L12 4l2.5 9.5 4-5.5L22 18z"/><line x1="2" y1="22" x2="22" y2="22"/></svg></div>
+          <h3 class="card-title">Combo VIP</h3>
+          <div class="card-divider"></div>
+          <p class="card-description">Experiencia completa con corte, perfilado de barba y mascarilla facial. El cuidado total que mereces a domicilio. La experiencia completa para el caballero que lo quiere todo.</p>
+          <p class="card-price">desde $40.000</p>
+          <a href="https://wa.me/573217921360?text=Hola%2C+quiero+reservar+el+Combo+VIP+a+domicilio+%E2%9C%A8" class="btn btn-gold-sm" target="_blank" rel="noopener">RESERVAR POR WHATSAPP</a>
+        </div>
+
+        <div class="service-card reveal-up delay-2">
+          <div class="card-illustration"><img src="assets/card-mechas.svg" alt="Mechas (incluye corte)" loading="lazy"/></div>
+          <div class="card-bg-vector"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M78 8L18 68l-8 18 18-8L88 18 78 8z" stroke-width="1.2"/><path d="M38 68l8 8" stroke-width="1.2"/><circle cx="14" cy="84" r="7" stroke-width="1.2"/><line x1="60" y1="26" x2="70" y2="36" stroke-width="0.8" stroke-dasharray="3 3"/><line x1="48" y1="38" x2="58" y2="48" stroke-width="0.8" stroke-dasharray="3 3"/><line x1="36" y1="50" x2="46" y2="60" stroke-width="0.8" stroke-dasharray="3 3"/></svg></div>
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3L6 15l-2 4 4-2L20 5l-2-2z"/><path d="M9 15l2 2"/><circle cx="5" cy="19" r="1.5"/></svg></div>
+          <h3 class="card-title">Mechas (incluye corte)</h3>
+          <div class="card-divider"></div>
+          <p class="card-description">Dale un giro a tu look con mechas a tu medida. Incluye corte para que el resultado sea perfecto a domicilio.</p>
+          <p class="card-price">desde $80.000</p>
+          <a href="https://wa.me/573217921360?text=Hola%2C+quiero+reservar+una+Mechas+corte+inluido+a+domicilio" class="btn btn-gold-sm" target="_blank" rel="noopener">RESERVAR POR WHATSAPP</a>
+        </div>
+
+        <div class="service-card reveal-up delay-3">
+          <div class="card-illustration"><img src="assets/card-cejas.svg" alt="Diseño de Cejas" loading="lazy"/></div>
+          <div class="card-bg-vector"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-linecap="round"><path d="M8 50C28 18 72 18 92 50 C72 82 28 82 8 50z" stroke-width="1.2"/><circle cx="50" cy="50" r="18" stroke-width="1.2"/><circle cx="50" cy="50" r="7" stroke-width="1"/><path d="M12 28C30 8 70 8 88 28" stroke-width="1.5"/></svg></div>
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 9c3-5.5 15-5.5 18 0"/><path d="M5 14c2.5-4.5 11.5-4.5 14 0"/></svg></div>
+          <h3 class="card-title">Diseño de Cejas</h3>
+          <div class="card-divider"></div>
+          <p class="card-description">Definición y forma perfecta donde estés. El detalle que marca la diferencia en cada rostro.</p>
+          <p class="card-price">desde $5.000</p>
+          <a href="https://wa.me/573217921360?text=Hola%2C+quiero+reservar+Dise%C3%B1o+de+Cejas+a+domicilio" class="btn btn-gold-sm" target="_blank" rel="noopener">RESERVAR POR WHATSAPP</a>
+        </div>
+
+        <div class="service-card reveal-up delay-1">
+          <div class="card-illustration"><img src="assets/card-tinturado-parcial.svg" alt="Tinturado parcial (incluye corte)" loading="lazy"/></div>
+          <div class="card-bg-vector"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-linecap="round"><path d="M50 8L36 30C28 44 24 52 24 62a26 26 0 0 0 52 0c0-10-4-18-12-32L50 8z" stroke-width="1.2"/><line x1="50" y1="8" x2="50" y2="88" stroke-width="1" stroke-dasharray="4 3"/><line x1="30" y1="46" x2="48" y2="46" stroke-width="0.9"/><line x1="28" y1="57" x2="47" y2="57" stroke-width="0.9"/><line x1="28" y1="68" x2="46" y2="68" stroke-width="0.9"/><line x1="30" y1="78" x2="44" y2="78" stroke-width="0.9"/></svg></div>
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L8.5 8C7 11 6 13 6 15a6 6 0 0 0 12 0c0-2-1-4-2.5-7L12 2z"/><line x1="12" y1="2" x2="12" y2="21" stroke-dasharray="2 2"/></svg></div>
+          <h3 class="card-title">Tinturado parcial (incluye corte)</h3>
+          <div class="card-divider"></div>
+          <p class="card-description">Cambia o cubre lo que necesites con un tinturado a tu medida. Corte incluido para un resultado completo. En la comodidad de tu hogar</p>
+          <p class="card-price">desde $40.000</p>
+          <a href="https://wa.me/573217921360?text=Hola%2C+quiero+reservar+Tinturado+parcial+a+domicilio" class="btn btn-gold-sm" target="_blank" rel="noopener">RESERVAR POR WHATSAPP</a>
+        </div>
+
+        <div class="service-card reveal-up delay-2">
+          <div class="card-illustration"><img src="assets/card-tinturado-completo.svg" alt="Tinturado completo (incluye corte)" loading="lazy"/></div>
+          <div class="card-bg-vector"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-linecap="round"><circle cx="50" cy="58" r="8" stroke-width="1.2"/><circle cx="50" cy="58" r="18" stroke-width="1"/><circle cx="50" cy="58" r="30" stroke-width="0.85"/><circle cx="50" cy="58" r="42" stroke-width="0.7"/><path d="M50 8L44 20C40 28 38 34 38 40" stroke-width="1.2"/><path d="M50 8L56 20C60 28 62 34 62 40" stroke-width="1.2"/><line x1="44" y1="20" x2="56" y2="20" stroke-width="1"/></svg></div>
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 21C6.5 21 2 16.5 2 11 2 5.5 6.5 1 12 1c1 0 2 .2 2.8.5C11 2.9 9 5.8 9 9c0 2.8 2.2 5 5 5 1 0 1.9-.3 2.7-.8C17.4 14.8 18 16 18 17c0 2.2-2.7 4-6 4z"/><circle cx="7" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="10.5" cy="6.5" r="1" fill="currentColor" stroke="none"/><circle cx="15.5" cy="7.5" r="1" fill="currentColor" stroke="none"/></svg></div>
+          <h3 class="card-title">Tinturado completo (incluye corte)</h3>
+          <div class="card-divider"></div>
+          <p class="card-description">Tinturado completo con corte incluido. Cobertura total y color uniforme para un cambio definitivo.</p>
+          <p class="card-price">desde $5.000</p>
+          <a href="https://wa.me/573217921360?text=Hola%2C+quiero+reservar+Tinturado+Completo+a+domicilio" class="btn btn-gold-sm" target="_blank" rel="noopener">RESERVAR POR WHATSAPP</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────── -->
+  <!-- 6. GALLERY -->
+  <!-- ─────────────────────────────────────────── -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">NUESTRO TRABAJO</p>
+        <h2 class="section-title">El arte habla<br><em>por sí solo.</em></h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal-fade delay-1" data-index="1">
+          <img src="assets/Corte2.jpeg" alt="Corte La W Barber" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay"><span>VER MÁS</span></div>
+        </div>
+        <div class="gallery-item reveal-fade delay-2" data-index="2">
+          <img src="assets/Corte3.jpeg" alt="Corte La W Barber" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay"><span>VER MÁS</span></div>
+        </div>
+        <div class="gallery-item reveal-fade delay-1" data-index="3">
+          <img src="assets/Corte4.jpeg" alt="Corte La W Barber" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay"><span>VER MÁS</span></div>
+        </div>
+        <div class="gallery-item reveal-fade delay-2" data-index="4">
+          <img src="assets/Corte5.jpeg" alt="Corte La W Barber" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay"><span>VER MÁS</span></div>
+        </div>
+        <div class="gallery-item reveal-fade delay-3" data-index="5">
+          <img src="assets/Corte6.jpeg" alt="Corte La W Barber" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay"><span>VER MÁS</span></div>
+        </div>
+        <div class="gallery-item reveal-fade delay-1" data-index="6">
+          <img src="assets/Corte7.jpeg" alt="Corte La W Barber" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay"><span>VER MÁS</span></div>
+        </div>
+        <div class="gallery-item reveal-fade delay-3" data-index="14" data-type="video">
+          <video class="gallery-img" src="assets/Video1.mp4" preload="metadata" muted playsinline></video>
+          <div class="gallery-overlay gallery-play">
+            <div class="play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-fade delay-2" data-index="7">
+          <img src="assets/Corte8.jpeg" alt="Corte La W Barber" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay"><span>VER MÁS</span></div>
+        </div>
+        <div class="gallery-item reveal-fade delay-3" data-index="8">
+          <img src="assets/Corte9.jpeg" alt="Corte La W Barber" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay"><span>VER MÁS</span></div>
+        </div>
+        <div class="gallery-item reveal-fade delay-1" data-index="9">
+          <img src="assets/Corte10.jpeg" alt="Corte La W Barber" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay"><span>VER MÁS</span></div>
+        </div>
+        <div class="gallery-item reveal-fade delay-2" data-index="10">
+          <img src="assets/Corte11.jpeg" alt="Corte La W Barber" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay"><span>VER MÁS</span></div>
+        </div>
+        <div class="gallery-item reveal-fade delay-1" data-index="15" data-type="video">
+          <video class="gallery-img" src="assets/Video2.mp4" preload="metadata" muted playsinline></video>
+          <div class="gallery-overlay gallery-play">
+            <div class="play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-fade delay-3" data-index="11">
+          <img src="assets/Corte12.jpeg" alt="Corte La W Barber" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay"><span>VER MÁS</span></div>
+        </div>
+        <div class="gallery-item reveal-fade delay-1" data-index="12">
+          <img src="assets/Corte13.jpeg" alt="Corte La W Barber" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay"><span>VER MÁS</span></div>
+        </div>
+        <div class="gallery-item reveal-fade delay-2" data-index="13">
+          <img src="assets/Corte14.jpeg" alt="Corte La W Barber" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay"><span>VER MÁS</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────── -->
+  <!-- 7. EXPERIENCE -->
+  <!-- ─────────────────────────────────────────── -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="experience-header reveal-up">
+        <h2 class="section-title large-title">La barbería<br><em>llega a ti.</em></h2>
+        <p class="experience-intro">No te muevas. Nosotros llevamos la experiencia premium hasta tu puerta.</p>
+      </div>
+
+      <div class="experience-grid">
+        <div class="experience-item reveal-up delay-1">
+          <div class="exp-icon">&#10022;</div>
+          <h3 class="exp-title">Vamos donde estés</h3>
+          <p class="exp-description">Casa, oficina o donde nos necesites en Barranquilla. Nos desplazamos hasta ti.</p>
+        </div>
+        <div class="experience-item reveal-up delay-2">
+          <div class="exp-icon">&#10022;</div>
+          <h3 class="exp-title">Maestros artesanos</h3>
+          <p class="exp-description">Barberos con años de formación y pasión por el detalle en cada corte.</p>
+        </div>
+        <div class="experience-item reveal-up delay-3">
+          <div class="exp-icon">&#10022;</div>
+          <h3 class="exp-title">Equipos y productos premium</h3>
+          <p class="exp-description">Llegamos con todo: herramientas y productos de primera para un resultado impecable.</p>
+        </div>
+        <div class="experience-item reveal-up delay-4">
+          <div class="exp-icon">&#10022;</div>
+          <h3 class="exp-title">Reserva en segundos</h3>
+          <p class="exp-description">Un mensaje por WhatsApp es todo lo que necesitas. Sin filas, sin esperas, sin complicaciones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────── -->
+  <!-- 8. TESTIMONIALS -->
+  <!-- ─────────────────────────────────────────── -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">CLIENTES</p>
+        <h2 class="section-title">La voz que<br><em>nos define.</em></h2>
+      </div>
+
+      <div class="carousel-wrapper reveal-up delay-1">
+        <div class="carousel-track" id="carouselTrack">
+
+          <div class="testimonial-slide active">
+            <div class="quote-mark">&ldquo;</div>
+            <p class="testimonial-text">No puedo creer que no lo haya descubierto antes. Me llamaron, llegaron puntuales y el resultado fue exactamente lo que quería. Sin salir de casa.</p>
+            <div class="testimonial-author">
+              <span class="author-name">CARLOS M.</span>
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="author-service">Combo VIP a domicilio</span>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="quote-mark">&ldquo;</div>
+            <p class="testimonial-text">El fade que me hicieron fue exactamente lo que pedí. Perfectamente degradado, sin un solo error. Y lo mejor: vinieron a mi apartamento.</p>
+            <div class="testimonial-author">
+              <span class="author-name">ANDRÉS P.</span>
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="author-service">Fade Premium a domicilio</span>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="quote-mark">&ldquo;</div>
+            <p class="testimonial-text">Reservé por WhatsApp en menos de un minuto. A la hora acordada ya tenían todo listo en mi sala. Nivel premium, sin moverse de casa.</p>
+            <div class="testimonial-author">
+              <span class="author-name">MIGUEL R.</span>
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="author-service">Corte Clásico a domicilio</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="prevBtn" aria-label="Anterior">&#8592;</button>
+          <div class="carousel-dots" id="carouselDots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="carousel-btn" id="nextBtn" aria-label="Siguiente">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────── -->
+  <!-- 9. BOOKING CTA -->
+  <!-- ─────────────────────────────────────────── -->
+  <section class="booking-cta section" id="booking">
+    <div class="cta-bg-radial"></div>
+    <div class="container">
+      <div class="cta-content reveal-up">
+        <div class="cta-ornament">&#10022;</div>
+        <h2 class="cta-title">¿Listo para tu<br><em>mejor versión?</em></h2>
+        <p class="cta-subtitle">Reserva en segundos, nosotros vamos a ti.<br>Sin filas. Sin desplazamientos.</p>
+        <a href="https://wa.me/573217921360?text=Hola%2C+quiero+reservar+un+servicio+a+domicilio+con+La+W+Barber+%F0%9F%92%88" class="btn btn-gold btn-large" target="_blank" rel="noopener">
+          RESERVAR POR WHATSAPP &rarr;
+        </a>
+        <p class="cta-hours">Lun &ndash; Sáb: 8:00am &ndash; 9:00pm &nbsp;&nbsp;|&nbsp;&nbsp; Dom: 9:00am &ndash; 7:00pm</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────── -->
+  <!-- 10. FOOTER -->
+  <!-- ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <span class="logo-main">LA <em>W</em></span>
+        <span class="logo-sub">BARBER</span>
+      </div>
+      <p class="footer-tagline">&ldquo;El arte de la navaja perfecta, en tu hogar.&rdquo;</p>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-col-title">COBERTURA</p>
+          <p>Servicio a domicilio<br>Barranquilla y alrededores</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">HORARIOS</p>
+          <p>Lun – Sáb: 8:00am – 9:00pm<br>Dom: 9:00am – 7:00pm</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">REDES</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">IG</a>
+            <a href="https://wa.me/573217921360" class="social-link" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+            <a href="#" class="social-link" aria-label="TikTok">TK</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+      <p class="footer-copy">&copy; 2025 La W Barber. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ── Lightbox ── -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">&#10005;</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Anterior">&#8592;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Corte La W Barber" />
+    <button class="lightbox-next" id="lightboxNext" aria-label="Siguiente">&#8594;</button>
+    <span class="lightbox-counter" id="lightboxCounter"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
