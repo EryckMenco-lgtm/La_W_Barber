@@ -91,7 +91,7 @@
       });
     } else {
       const wrap = document.createElement('span');
-      wrap.style.cssText = 'display:inline-block;overflow:hidden;vertical-align:bottom;';
+      wrap.style.cssText = 'display:inline-block;overflow:hidden;vertical-align:bottom;padding-right:15px;margin-right:-15px;';
       const inner = document.createElement('span');
       inner.className = 'char';
       inner.style.transitionDelay = (idx++ * 50) + 'ms';
@@ -371,7 +371,7 @@ if (window.matchMedia('(pointer: fine)').matches) {
       const ry =  x * 9;
       card.style.transform  = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg)`;
       card.style.transition = 'transform 0.08s ease';
-      if (icon)  icon.style.transform  = `translate(${ry * 0.6}px, ${-rx * 0.6}px)`;
+      if (icon)  icon.style.transform  = `translate(${ry * 0.6}px, ${-rx * 0.6}px) rotate(15deg)`;
       if (title) title.style.transform = `translate(${ry * 0.3}px, ${-rx * 0.3}px)`;
     });
 

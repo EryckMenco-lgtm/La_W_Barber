@@ -264,8 +264,9 @@ body.cursor-hover .cursor-ring {
 .nav-logo {
   display: flex;
   flex-direction: column;
-  line-height: 1;
+  line-height: 1.15;
   cursor: none;
+  overflow: visible;
 }
 .nav-logo .logo-main {
   font-family: var(--font-serif);
@@ -273,10 +274,13 @@ body.cursor-hover .cursor-ring {
   font-weight: 400;
   color: var(--ivory);
   letter-spacing: 2px;
+  padding-right: 4px;
 }
 .nav-logo .logo-main em {
   color: var(--gold);
   font-style: italic;
+  display: inline-block;
+  padding-right: 6px;
 }
 .nav-logo .logo-sub {
   font-family: var(--font-sans);
